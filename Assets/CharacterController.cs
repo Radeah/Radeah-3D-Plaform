@@ -7,8 +7,12 @@ public class CharacterController : MonoBehaviour
     float maxSpeed = 0.01f;
     float rotation = 0.2f;
     float camRotation = 0.2f;
-
     GameObject cam;
+    Rigidbody myRigidbody;
+    
+    bool isOnGround;
+    public Gameobject GroundChecker;
+    public LayerMask groundLayer;
 
     float rotationSpeed = 2.0F;
     float camRotationSpeed = 1.5f;
@@ -16,11 +20,15 @@ public class CharacterController : MonoBehaviour
     void Start()
     {
         cam = GameObject.Find("Main Camera");
+        myRigidbody = GetComponent<Rigidbody>();
     }
+        void Update()
+{
+        isOnGround = Physics.CheckerSphere(GroundChecker.transform.position, 0.1f, grounLayer);
 
-    
-    void Update()
-    {
+        Vector3 newVelocity = transform.forward * Input.GetAxis("Vertical") * maxSpeed;
+        myRigidbody.velocity = new Vector3(newVelocity.x, myRigidbody.velocity.y, newVelocity.z);
+        
         transform.position = transform.position + (transform.forward * Input.GetAxis("Vertical") * maxSpeed);
 
         rotation = rotation + Input.GetAxis("Mouse X") * rotationSpeed;
@@ -30,5 +38,5 @@ public class CharacterController : MonoBehaviour
         cam.transform.localRotation = Quaternion.Euler(new Vector3(camRotation, 0.0f, 0.0f));
 
 
-    }
+    
 }
