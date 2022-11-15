@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
-    float maxSpeed = 0.01f;
+    public float maxSpeed = 0.01f;
     float rotation = 0.2f;
     float camRotation = 0.2f;
     GameObject cam;
@@ -24,6 +24,9 @@ public class CharacterController : MonoBehaviour
     {
         cam = GameObject.Find("Main Camera");
         myRigidbody = GetComponent<Rigidbody>();
+
+        Cursor.lockState = CursorLockMode.Locked;
+        camRotation = Mathf.Clamp(camRotation, -40.0f, 40.0f);
     }
     void Update()
     {
@@ -32,6 +35,10 @@ public class CharacterController : MonoBehaviour
         if (isOnGround == true && Input.GetKeyDown(KeyCode.Space))
         {
             myRigidbody.AddForce(transform.up * jumpForce);
+            float horizontally = Input.GetAxis("Horizontal");
+            float vertically = Input.GetAxis("Vertical");
+
+           
         }
 
         Vector3 newVelocity = transform.forward * Input.GetAxis("Vertical") * maxSpeed;
