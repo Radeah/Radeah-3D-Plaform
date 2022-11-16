@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float maxSpeed;
-    public float noramalSpeed = 10.0f;
-    public float crouchSpeed = 20.0f;
+    public float noramalSpeed = 0.0f;
+    public float crouchSpeed = 5.0f;
 
     float rotation = 0.2f;
     float camRotation = 0.2f;
@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
 
     float rotationSpeed = 2.0F;
     float camRotationSpeed = 1.5f;
-    float jumpForce = 400f;
+    float jumpForce = 300f;
 
     public float maxCrouch = -5.0f;
     float crouchTimer;
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
             float vertically = Input.GetAxis("Vertical");
         }
 
-        if (Input.GetKey(KeyCode.LeftShift) && crouchTimer > 0.0f)
+        if (Input.GetKey(KeyCode.LeftShift) && crouchTimer > 5.0f)
         {
             maxSpeed = crouchSpeed;
             crouchTimer = crouchTimer = Time.deltaTime;
@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
                crouchTimer = crouchTimer + Time.deltaTime;
             }
         }
-        crouchTimer = Mathf.Clamp(crouchTimer, 0.0f, maxCrouch);     
+        crouchTimer = Mathf.Clamp(crouchTimer, 5.0f, maxCrouch);     
 
         Vector3 newVelocity = (transform.forward * Input.GetAxis("Vertical") * maxSpeed) + (transform.right * Input.GetAxis("Horizontal") *maxSpeed);
         myRigidbody.velocity = new Vector3(newVelocity.x, myRigidbody.velocity.y, newVelocity.z);
