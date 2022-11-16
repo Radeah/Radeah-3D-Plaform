@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-   
+    public float maxSpeed;
+    public float noramalSpeed = 10.0f;
+    public float crouchSpeed = 20.0f;
 
-
-
-    public float maxSpeed = 0.01f;
     float rotation = 0.2f;
     float camRotation = 0.2f;
     GameObject cam;
@@ -20,8 +19,10 @@ public class CharacterController : MonoBehaviour
 
     float rotationSpeed = 2.0F;
     float camRotationSpeed = 1.5f;
-
     float jumpForce = 400f;
+
+    public float maxCrouch = -5.0f;
+    float crouchTimer;
     
 
     void Start()
@@ -31,6 +32,8 @@ public class CharacterController : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         camRotation = Mathf.Clamp(camRotation, -40.0f, 40.0f);
+
+        crouchTimer = maxCrouch;
     }
     void Update()
     {
@@ -41,11 +44,23 @@ public class CharacterController : MonoBehaviour
             myRigidbody.AddForce(transform.up * jumpForce);
             float horizontally = Input.GetAxis("Horizontal");
             float vertically = Input.GetAxis("Vertical");
-
-           
         }
 
-        Vector3 newVelocity = transform.forward * Input.GetAxis("Vertical") * maxSpeed;
+        if (Input.GetKey(KeyCode.LeftShift) && crouchTimer > 0.0f)
+        {
+            maxSpeed = crouchSpeed;
+            crouchTimer = crouchTimer = Time.deltaTime;
+        } else
+        {
+            maxSpeed = noramalSpeed;
+            if (Input.GetKey(KeyCode.LeftShift) == false) 
+            { 
+               crouchTimer = crouchTimer + Time.deltaTime;
+            }
+        }
+        crouchTimer = Mathf.Clamp(crouchTimer, 0.0f, maxCrouch);     
+
+        Vector3 newVelocity = (transform.forward * Input.GetAxis("Vertical") * maxSpeed) + (transform.right * Input.GetAxis("Horizontal") *maxSpeed);
         myRigidbody.velocity = new Vector3(newVelocity.x, myRigidbody.velocity.y, newVelocity.z);
 
         rotation = rotation + Input.GetAxis("Mouse X") * rotationSpeed;
