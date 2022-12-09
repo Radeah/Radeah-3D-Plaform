@@ -2,40 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f3c067e-9d0a-437f-9c1a-f02857e46d00" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../BIGSTONE.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BIGSTONE.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CharacterController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CharacterController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LEAVES.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LEAVES.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Platform.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Platform.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Rocket.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Rocket.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StickyPlatform.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StickyPlatform.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TREE TRUNK.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TREE TRUNK.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Water.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Water.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../batty.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../batty.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../coconut.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../coconut.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../log.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../log.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rock.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rock.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rocks.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rocks.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../screw 1.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../screw 1.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sign.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sign.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../snowman.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../snowman.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stone door.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stone door.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../SampleScene.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,18 +13,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KillWater.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="270">
               <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pickup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
-                <marker date="1670253380002" expanded="true" signature="6:113" ph="..." />
-                <marker date="1670253380002" expanded="true" signature="162:450" ph="{...}" />
-                <marker date="1670253380002" expanded="true" signature="205:226" ph="{...}" />
-                <marker date="1670253380002" expanded="true" signature="284:305" ph="{...}" />
-                <marker date="1670253380002" expanded="true" signature="349:447" ph="{...}" />
-                <marker date="1670253380002" expanded="true" signature="389:444" ph="{...}" />
+                <element signature="e#0#78#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CharacterController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+              <folding>
+                <marker date="1670585557310" expanded="true" signature="6:78" ph="..." />
+                <marker date="1670585557310" expanded="true" signature="128:1510" ph="{...}" />
+                <marker date="1670585557310" expanded="true" signature="488:595" ph="{...}" />
+                <marker date="1670585557310" expanded="true" signature="614:1506" ph="{...}" />
+                <marker date="1670585557310" expanded="true" signature="783:863" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -69,11 +56,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/KillWater.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Pickup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CharacterController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/KillWater.cs" />
+        <option value="$PROJECT_DIR$/CharacterController.cs" />
       </list>
     </option>
   </component>
@@ -127,11 +117,12 @@
       <workItem from="1670250794755" duration="1671000" />
       <workItem from="1670252573168" duration="7000" />
       <workItem from="1670252653634" duration="1014000" />
+      <workItem from="1670584502185" duration="1195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2707000" />
+    <option name="totallyTimeSpent" value="3902000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -143,9 +134,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2605221" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26318595" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -188,15 +179,30 @@
     <entry file="file://$PROJECT_DIR$/NewBehaviourScript.cs" />
     <entry file="file://$PROJECT_DIR$/KillWater.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="270">
           <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pickup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <marker date="1670253380002" expanded="true" signature="6:113" ph="..." />
-            <marker date="1670253380002" expanded="true" signature="162:450" ph="{...}" />
-            <marker date="1670253380002" expanded="true" signature="205:226" ph="{...}" />
-            <marker date="1670253380002" expanded="true" signature="284:305" ph="{...}" />
-            <marker date="1670253380002" expanded="true" signature="349:447" ph="{...}" />
-            <marker date="1670253380002" expanded="true" signature="389:444" ph="{...}" />
+            <element signature="e#0#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CharacterController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <marker date="1670585557310" expanded="true" signature="6:78" ph="..." />
+            <marker date="1670585557310" expanded="true" signature="128:1510" ph="{...}" />
+            <marker date="1670585557310" expanded="true" signature="488:595" ph="{...}" />
+            <marker date="1670585557310" expanded="true" signature="614:1506" ph="{...}" />
+            <marker date="1670585557310" expanded="true" signature="783:863" ph="{...}" />
           </folding>
         </state>
       </provider>
